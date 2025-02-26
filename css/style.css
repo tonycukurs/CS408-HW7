@@ -19,21 +19,32 @@ img {
 
 .grid {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
   max-width: 980px;
-}
-
-nav {
-  background-color: #000;
-  padding: .5em;
+  display: flex;
   
 }
 
+
+
+
+/*Updated css for the nav bar to display horizontally*/
+nav {
+  background-color: #000;
+  padding: .5em;
+  width: 100%;
+}
+/*Used flex here*/
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 1em;
 }
 
 nav a {
@@ -45,8 +56,9 @@ nav a {
 /*Changed css of photos to be grid layout*/
 .photos {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: 100px 100px;
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 1px;
 }
 
 .feature {
