@@ -19,13 +19,32 @@ img {
 
 .grid {
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 20 20px;
   max-width: 980px;
   display: flex;
-  
+  grid-template-columns: 2fr 1fr; /* Make article wider than aside */
+  gap: 20px;
 }
 
 
+.grid .photos li {
+  display: flex;
+  justify-content: center;
+}
+
+.grid .photos img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 5px; 
+}
+
+
+article img.feature {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  
+}
 
 
 /*Updated css for the nav bar to display horizontally*/
