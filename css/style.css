@@ -19,8 +19,7 @@ img {
 
 .grid {
   margin: 0 auto;
-  padding: 20 20px;
-  max-width: 980px;
+  padding:  20px;
   display: flex;
   grid-template-columns: 2fr 1fr; /* Make article wider than aside */
   gap: 20px;
@@ -32,19 +31,7 @@ img {
   justify-content: center;
 }
 
-.grid .photos img {
-  max-width: 100%; 
-  height: auto;
-  border-radius: 5px; 
-}
 
-
-article img.feature {
-  max-width: 100%;
-  display: block;
-  margin-bottom: 10px;
-  
-}
 
 
 /*Updated css for the nav bar to display horizontally*/
@@ -66,6 +53,20 @@ nav li {
   margin-right: 1em;
 }
 
+.feature {
+    width: 200px;
+}
+
+article img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -78,9 +79,5 @@ nav a {
   grid-template-columns: 100px 100px;
   grid-auto-rows: minmax(10px, auto);
   grid-gap: 1px;
-}
-
-.feature {
-    width: 200px;
 }
 
